@@ -20,3 +20,15 @@ hangman_art = {0: ("   ",
                6: (" o ",
                    "/|\\",
                    "/ \\")}
+def displayman(wrongguess):
+    print("*****************")
+    for i in hangman_art[wrongguess]:
+        print(i)
+    print("*****************")
+
+def displayhint(hint):
+    print(" ".join(hint))
+
+def displayanswer(answer):
+    print(answer)
+
