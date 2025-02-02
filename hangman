@@ -69,7 +69,7 @@ def main():
             displayanswer(answer)
             print("you won")
             isrunning=False
-        elif wronggues>=len(hangman_art)-1:
+        if wronggues>=len(hangman_art)-1:
             displayman(wronggues)
             displayanswer(answer)
             print("you lose")
